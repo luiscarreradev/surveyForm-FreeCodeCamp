@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>        
+    <div class="container">
+
+        <header class="textContainer">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </header>
+
+        <form action="#" id="survey-form" autocomplete="on" class="form">
+            
+            <div class="form-input">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" autocomplete="name" required>
+            </div>
+    
+            <div class="form-input">
+                <label id="email-label" for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter your email" autocomplete="email" required>
+            </div>
+    
+            <div class="form-input">
+                <label id="number-label" for="number">Age <span>(optional)</span></label>
+                <input type="number" id="number" placeholder="Age" min="10" max="99">
+            </div>
+    
+            <div class="form-input">
+                <label for="dropdown">Which option best describes your current role</label>
+                <select name="dropdown" id="dropdown" class="form-input__dropdown">
+                    <option disabled selected>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="full-time-job">Full Time Job</option>
+                    <option value="full-time-student">Full Time Student</option>
+                    <option value="prefer-not-to-say">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+    
+            <div class="form-input">
+                <p class="form-imput__text">Would you recommend freeCodeCamp to a friend?</p>
+    
+                <label for="recomendation1">
+                    <input type="radio" name="recomendation" id="recomendation1" class="form-imput__recomendation" value="recomendation">
+                    Definitely
+                </label>
+    
+                <label for="recomendation2">
+                    <input type="radio" name="recomendation" id="recomendation2" class="form-imput__recomendation" value="recomendation">
+                    Maybe
+                </label>
+    
+                <label for="recomendation3">
+                    <input type="radio" name="recomendation" id="recomendation3" class="form-imput__recomendation" value="recomendation">
+                    Not sure
+                </label>
+            </div>
+    
+            <div class="form-input">
+                <label for="dropdown2">What is your favorite feature of freeCodeCamp?</label>
+                <select name="dropdown2" id="dropdown2" class="form-input__dropdown">
+                    <option disabled selected>Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="Open-source">Open Source</option>
+                </select>
+            </div>
+    
+            <div class="form-input">
+                <p class="form-imput__text">What would you like to see improved? <span>(Check all that apply)</span></p>
+                
+                <label for="input-improve1">
+                    <input type="checkbox" name="input-improve1" id="input-improve1" class="form-imput__improve" value="input-improve1">
+                    Front-end Projects
+                </label>
+    
+                <label for="input-improve2">
+                    <input type="checkbox" name="input-improve2" id="input-improve2" class="form-imput__improve" value="input-improve2">
+                    Back-end Projects
+                </label>
+    
+                <label for="input-improve3">
+                    <input type="checkbox" name="input-improve3" id="input-improve3" class="form-imput__improve" value="input-improve1">
+                    Data Visualization
+                </label>
+    
+                <label for="input-improve4">
+                    <input type="checkbox" name="input-improve4" id="input-improve4" class="form-imput__improve" value="input-improve4">
+                    Challenges
+                </label>
+    
+                <label for="input-improve5">
+                    <input type="checkbox" name="input-improve5" id="input-improve5" class="form-imput__improve" value="input-improve5">
+                    Open Source Community
+                </label>
+    
+                <label for="input-improve6">
+                    <input type="checkbox" name="input-improve6" id="input-improve6" class="form-imput__improve" value="input-improve6">
+                    Gitter help rooms
+                </label>
+    
+                <label for="input-improve7">
+                    <input type="checkbox" name="input-improve7" id="input-improve7" class="form-imput__improve" value="input-improve7">
+                    Videos
+                </label>
+    
+                <label for="input-improve8">
+                    <input type="checkbox" name="input-improve8" id="input-improve8" class="form-imput__improve" value="input-improve8">
+                    City Meetups
+                </label>
+    
+                <label for="input-improve9">
+                    <input type="checkbox" name="input-improve9" id="input-improve9" class="form-imput__improve" value="input-improve9">
+                    Wiki
+                </label>
+    
+                <label for="input-improve10">
+                    <input type="checkbox" name="input-improve10" id="input-improve10" class="form-imput__improve" value="input-improve10">
+                    Forum
+                </label>
+    
+                <label for="input-improve11">
+                    <input type="checkbox" name="input-improve11" id="input-improve11" class="form-imput__improve" value="input-improve11">
+                    Additional Courses
+                </label>
+            </div>
+    
+            <div class="form-input">
+                <label for="textarea">Any comments or suggestions?</label>
+                <textarea class="textarea" name="textarea"  placeholder="Enter your comment here..." id="textarea" cols="30" rows="5"></textarea>
+            </div>
+
+            <input id="submit" type="submit" value="Submit">
+    
+        </form>
+    </div>
+</body>
+</html>
